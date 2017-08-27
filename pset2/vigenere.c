@@ -1,3 +1,5 @@
+// Vigenere: receive alphabetical input from user, then encode and output the encoded text
+
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
