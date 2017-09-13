@@ -1,5 +1,5 @@
 /**
- * Implements a dictionary's functionality.
+ * Implements a dictionary's functionality. Almost all Erin's work.
  */
 
 #include <stdbool.h>
