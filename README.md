@@ -1,3 +1,3 @@
 # CS50
 
-My solutions for CS50's 2017 psets.
+Here you'll find my solutions for Harvard's course CS50 (Intro to Computer Science) 2017 problem sets.
