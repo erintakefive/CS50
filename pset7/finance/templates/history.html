@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table id="history" style="width:100%">
+        <tr>
+            <th>Stock Name</th>
+            <th>Shares Added</th>
+            <th>Share Price</th>
+            <th>Total Exchanged</th>
+            <th>Date of Transaction
+        </tr>
+        {% for i in range(0, x) %}
+            <tr>
+                <td>{{ history[i]["stock"] }} ({{ history[i]["symbol"] }})</td>
+                <td>{{ history[i]["shares"] }}</td>
+                <td>{{ "$%.2f"|format(history[i]["share_price"]) }}</td>
+                <td>{{ "$%.2f"|format(history[i]["total_price"]) }}</td>
+                <td>{{ history[i]["date"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table id="index" style="width:100%", "header-align: center">
+        <tr>
+            <th>Stock Name</th>
+            <th>Shares Owned</th>
+            <th>Share Price</th>
+            <th>Total Share Value</th>
+            <th>Cash Balance</th>
+            <th>Grand Total</th>
+        </tr>
+        {% for i in range(0, x) %}
+            <tr>
+                <td>{{ stocks[i]["stock"] }} ({{ stocks[i]["symbol"] }})</td>
+                <td>{{ stocks[i]["SUM(shares)"] }}</td>
+                <td>{{ "$%.2f"|format(price[i]["price"]) }}</td>
+                <td>{{ "$%.2f"|format(value[i]) }}</td>
+                <td>{{ "$%.2f"|format(cash) }}</td>
+                <td>{{ "$%.2f"|format(total) }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
