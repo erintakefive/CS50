@@ -1,3 +1,8 @@
+"""
+This is the program that included most of the actually logic and programming work outside
+of html templating with Jinja. 
+"""
+
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session, url_for
 from flask_session import Session
